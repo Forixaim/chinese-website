@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
-import hkmap from '../public/hkmap.svg'
+import haus from '../public/hkdisney.jpg'
 
-const Home: NextPage = () => 
+const Tour: NextPage = () => 
 {
   	return (
 		<div className={styles.container}>
@@ -19,13 +19,16 @@ const Home: NextPage = () =>
 			<main className={styles.main}>
 				<div>
 					<h1 className={styles.title}>
-						香港
+						香港 - 旅游
 					</h1>
 					<p className={styles.description}>
-						香港是一个小岛，在中国广东深圳南面。 香港面积有一千平方公里。靠近珠江三角洲。
+						香港有很多旅游地方，你可以去上船去海边，和钓鱼。你也可以去澳门，他们有很多好玩的地方和非常好的酒店。
 					</p>
-					<div className={styles.centerImage}>
-                        <Image src={hkmap} width={500} height={500}/>
+                    <p className={styles.description}>
+						香港也有迪斯尼，所以你可以去看很多卡通合作过山车。
+					</p>
+                    <div className={styles.centerImage}>
+                        <Image src={haus} width={1000} height={500}/>
                     </div>
 				</div>
 			</main>
@@ -36,4 +39,4 @@ const Home: NextPage = () =>
   	)
 }
 
-export default Home
+export default Tour
