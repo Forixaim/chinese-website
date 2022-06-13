@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
-import haus from '../public/kowloon.webp'
+import shop from '../public/kowloon.webp'
 
-const Tour: NextPage = () => 
+const Shop: NextPage = () => 
 {
   	return (
 		<div className={styles.container}>
@@ -26,7 +26,7 @@ const Tour: NextPage = () =>
 						因为你有很多地方旅游，你可以买很多东西。九龙有最好的地方买东西，他们有很多很多的商店。
 					</p>
                     <div className={styles.centerImage}>
-                        <Image src={haus} width={700} height={500}/>
+                        <Image src={shop} width={700} height={500}/>
                     </div>
 				</div>
 			</main>
@@ -37,4 +37,4 @@ const Tour: NextPage = () =>
   	)
 }
 
-export default Tour
+export default Shop

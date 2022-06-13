@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
-import haus from '../public/hkdisney.jpg'
+import disney from '../public/hkdisney.jpg'
 
 const Tour: NextPage = () => 
 {
@@ -28,7 +28,7 @@ const Tour: NextPage = () =>
 						香港也有迪斯尼，所以你可以去看很多卡通合作过山车。
 					</p>
                     <div className={styles.centerImage}>
-                        <Image src={haus} width={1000} height={500}/>
+                        <Image src={disney} width={1000} height={500}/>
                     </div>
 				</div>
 			</main>
